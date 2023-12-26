@@ -4,11 +4,15 @@
 
 Este projeto tem como objetivo apresentar os conhecimentos adquiridos com as seguintes ferramentas:
 
-- Transações
-- Action Plugins
-- WorkFlow Plugins
+- Plugins
+- Actions
+- WorkFlow Assembys
+- Personalização da interface do usuário
+- Desenvolvimento de processos de negócios personalizados.
 
 Além dos Plugins de Conta e Contato apresentados no treinamento, foram incluídos os seguintes Plugins relacionados ao Aluno:
+
+## Plugins
 
 1. **PluginAssincPostOperation**
    - Na Entidade Aluno e Conta:
@@ -29,10 +33,13 @@ Além dos Plugins de Conta e Contato apresentados no treinamento, foram incluíd
 
 Na Entidade Aluno, foi criada a Action para Busca de CEP.
 
-**Regra de Negócio:**
-- Quando o CEP existir, os demais campos de endereço se tornarão obrigatórios.
 
 ## WorkFlow
 
 Na Entidade Aluno, foi criado um WorkFlow. Quando o Aluno é vinculado a um Curso e está em Curso será obrigatório informar data de Inicio e será criado automaticamente o Calendário de Aulas conforme a Duração do Curso.
+
+## Regra de Negócio:**
+- Quando o CEP existir no cadastro do Aluno, os demais campos de endereço se tornarão obrigatórios.
+- Se estiver em Branco os campos serão apagados; 
+
 
